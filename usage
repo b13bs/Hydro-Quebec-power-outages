@@ -1,0 +1,2 @@
+./hydro.py 45.123 "-73.456" infos
+./hydro.py 45.123 "-73.456" check
