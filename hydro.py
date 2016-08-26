@@ -9,7 +9,7 @@ import pickle
 from haversine import haversine
 from pprint import pprint
 
-class Location(self,x,y):
+class Location:
     def __init__(self,x,y):
         self.latitude = x
         self.longitude = y
@@ -44,7 +44,7 @@ def parse_webpage():
         
     return json.loads(r.text)
 
-"""
+
 # From the list of entries, retrieve entry in function of the coords 
 def get_specific_entry(json_obj, coord):
     lat_long, coord_value = coord.split(":")
@@ -64,14 +64,14 @@ def get_specific_entry(json_obj, coord):
         print("[-] Error with coordinate, more than one results found.")
         sys.exit()
     elif count == 0:
-        print("[-] Nothing for that coordinate. Either no problem or coordinates too accurante. Try with 3 decimals.")
+        print("[-] Nothing for that coordinate. Either there are no outages or the coordinates too accurate.")
         sys.exit()
     else:
         return return_entry
-"""
 
-def get_specific_entry(coords_list, coord):
-    for entry in json_obj:
+
+#def get_specific_entry(coords_list, coord):
+#    for entry in json_obj:
 
 
 # Given an entry, return the pretty print format
