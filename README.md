@@ -33,6 +33,8 @@ Dependencies
 =====
 - Python 3
 - Requests module
+Scripted installation with the provided requirements.txt with pip. As all Python projects, it is recommended to install in a virtual environnement.
+$ pip install -r requirements.txt
 
 Motivation
 ==========
