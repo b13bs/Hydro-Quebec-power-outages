@@ -1,2 +1,2 @@
-haversine>=0.4.5
-requests>=2.10.0
+haversine==2.0.0
+requests==2.21.0
